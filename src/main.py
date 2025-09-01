@@ -7,13 +7,20 @@ class Trainee:
         horas_acumuladas (int): Total de horas registradas.
     """
 
-    def __init__(self, nombre: str, area_interes: str, horas_acumuladas: int = 0):
+    def __init__(
+        self,
+        nombre: str,
+        area_interes: str,
+        horas_acumuladas: int = 0,
+    ):
         """Inicializa un nuevo trainee.
 
         Args:
             nombre (str): Nombre del trainee.
-            area_interes (str): Área de interés del trainee (ej. Backend, Data, Ciberseguridad).
-            horas_acumuladas (int, optional): Horas de formación acumuladas. Por defecto 0.
+            area_interes (str): Área de interés del trainee
+                (ej. Backend, Data, Ciberseguridad).
+            horas_acumuladas (int, optional): Horas de formación acumuladas.
+                Por defecto 0.
         """
         self.nombre = nombre
         self.area_interes = area_interes
@@ -33,5 +40,8 @@ class Trainee:
 
 
 if __name__ == "__main__":
-    trainee = Trainee("Tu Nombre", "Backend con Python")
+    trainee = Trainee(
+        nombre="Tu Nombre",
+        area_interes="Backend con Python",
+    )
     print(trainee.resumen())

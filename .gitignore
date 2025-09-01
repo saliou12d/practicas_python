@@ -16,6 +16,16 @@ __pycache__/
 logs/
 *.log
 
+# Cobertura de tests
+htmlcov/
+.coverage
+coverage.xml
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+
 # Archivos temporales del sistema
 .DS_Store
 Thumbs.db
